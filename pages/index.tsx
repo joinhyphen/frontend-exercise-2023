@@ -1,6 +1,47 @@
 import { Button, Center, Heading, Stack } from '@chakra-ui/react'
 
-const WelcomePage = () => {
+type Scale = 'low' | 'high'
+
+type TaskCards = Array<{
+  title: React.ReactNode
+  importance: Scale
+  urgency: Scale
+}>
+
+const taskCards: TaskCards = [
+  {
+    title: <>Finish presentation</>,
+    importance: 'high',
+    urgency: 'low'
+  },
+  {
+    title: <>Re-design website</>,
+    importance: 'high',
+    urgency: 'high'
+  },
+  {
+    title: <>Choose gift for customer</>,
+    importance: 'low',
+    urgency: 'high'
+  },
+  {
+    title: <>Tweak ad text color</>,
+    importance: 'low',
+    urgency: 'low'
+  },
+  {
+    title: <>Get birthday card for Pam</>,
+    importance: 'low',
+    urgency: 'high'
+  },
+  {
+    title: <>Send email to Sarah</>,
+    importance: 'high',
+    urgency: 'low'
+  }
+]
+
+const Index = () => {
   return (
     <Center w='100vw' h='100vh'>
       <Stack maxWidth={880} alignItems='center' textAlign='center' spacing={8}>
@@ -19,4 +60,4 @@ const WelcomePage = () => {
   )
 }
 
-export default WelcomePage
+export default Index
