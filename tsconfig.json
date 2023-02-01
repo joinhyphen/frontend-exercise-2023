@@ -1,6 +1,4 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Next.js",
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
@@ -13,7 +11,7 @@
     "esModuleInterop": true,
     "module": "esnext",
     "isolatedModules": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "composite": false,
     "inlineSources": false,
     "moduleResolution": "node",
@@ -23,6 +21,5 @@
     "resolveJsonModule": true,
     "noUncheckedIndexedAccess": true
   },
-  "include": ["src", "next-env.d.ts"],
   "exclude": ["node_modules"]
 }
