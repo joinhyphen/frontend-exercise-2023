@@ -3,7 +3,7 @@ module.exports = {
   semi: false,
   singleQuote: true,
   jsxSingleQuote: true,
-  endOfLine: "lf",
-  trailingComma: "none",
-  plugins: [require.resolve("prettier-plugin-organize-imports")],
-};
+  endOfLine: 'lf',
+  trailingComma: 'none',
+  plugins: [require.resolve('prettier-plugin-organize-imports')]
+}
